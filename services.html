@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twin Cities Animal Rescue - Services</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="Java/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,6 +44,25 @@
                 <figcaption>Meet Barnaby, our Pet of the Week! He is a sweet, gentle senior cat looking for a quiet retirement home.</figcaption>
             </figure>
         </section>
+
+        <section>
+    <h2>Interactive Program Finder</h2>
+    <p>Select an area of interest to learn more about how you can get involved.</p>
+    
+    <form id="program-form">
+        <label for="program-choice">Choose a Program:</label>
+        <select id="program-choice" name="program-choice">
+            <option value="">--Select an option--</option>
+            <option value="foster">Foster Care Program</option>
+            <option value="volunteer">Shelter Volunteer</option>
+            <option value="adoption">Adoption Services</option>
+        </select>
+        <button type="submit" style="margin-top: 10px;">View Details</button>
+    </form>
+
+    <div id="program-info" style="margin-top: 15px; padding: 10px; background: #FFF8F0; border-radius: 4px;"></div>
+</section>
+
     </main>
 
     <footer>

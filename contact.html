@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twin Cities Animal Rescue - Contact</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="Java/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,52 +30,55 @@
         </section>
 
         <section>
-            <h2>Volunteer or Foster Interest Form</h2>
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Inquiry Details</legend>
-                    
-                    <p>
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </p>
+    <h2>Volunteer or Foster Interest Form</h2>
+    <form id="inquiry-form" action="#" method="POST">
+        <fieldset>
+            <legend>Inquiry Details</legend>
+            
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="name-error" style="display: block; font-size: 0.85rem; margin-top: 3px; color: red;"></span>
+            </p>
 
-                    <p>
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email">
+                <span id="email-error" style="display: block; font-size: 0.85rem; margin-top: 3px; color: red;"></span>
+            </p>
 
-                    <p>
-                        <label for="interest">Interest Type:</label>
-                        <select id="interest" name="interest" required>
-                            <option value="">--Please choose an option--</option>
-                            <option value="volunteer">Volunteer</option>
-                            <option value="foster">Foster</option>
-                            <option value="adoption">Adoption Information</option>
-                        </select>
-                    </p>
+            <p>
+                <label for="interest">Interest Type:</label>
+                <select id="interest" name="interest">
+                    <option value="">--Please choose an option--</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="foster">Foster</option>
+                    <option value="adoption">Adoption Information</option>                    
+                </select>
+                <span id="interest-error" style="display: block; font-size: 0.85rem; margin-top: 3px; color: red;"></span>
+            </p>
 
-                    <p>
-                        <label for="availability">Availability:</label>
-                        <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings" required>
-                    </p>
+            <p>
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings">
+            </p>
 
-                    <p>
-                        <label for="experience">Experience with Pets:</label>
-                        <textarea id="experience" name="experience" rows="3" required></textarea>
-                    </p>
+            <p>
+                <label for="experience">Experience with Pets:</label>
+                <textarea id="experience" name="experience" rows="3"></textarea>
+            </p>
 
-                    <p>
-                        <label for="message">Short Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </p>
+            <p>
+                <label for="message">Short Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </p>
 
-                    <p>
-                        <button type="submit">Submit Inquiry</button>
-                    </p>
-                </fieldset>
-            </form>
-        </section>
+            <p>
+                <button type="submit">Submit Inquiry</button>
+            </p>
+        </fieldset>
+    </form>
+</section>
     </main>
 
     <footer>
